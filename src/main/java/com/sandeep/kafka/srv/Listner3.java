@@ -7,15 +7,15 @@ import com.sandeep.kafka.config.KafkaConfig;
 
 
 
-@Service
+//@Service
 
-public class Listner {
+public class Listner3 {
 	
-	public Listner() {
-		System.out.println(" listner created");
+	public Listner3() {
+		System.out.println(" listner created 3");
 	}
 
-	@KafkaListener(topics = "first_topic", groupId = KafkaConfig.group )
+	//@KafkaListener(topics = "first_topic", groupId = KafkaConfig.group )
 	public void consume(String message) {
 		Long start = Long.parseLong(message);
 		
